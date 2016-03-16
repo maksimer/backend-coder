@@ -19,7 +19,7 @@ class Maksimer_Backend_Coder    {
             // Perhaps we should show some pictures from our latest julebord in Fleischer / Voss? 
         }
 
-        if( $wmc->will_code_for_food() ) {
+        if( !$wmc->will_code_for_food() ) {
             throw new Exception('Our lunch is actually (almost…) free and everyone loves a good burger!.', 'Code_For_Food');
         }
         
