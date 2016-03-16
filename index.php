@@ -18,6 +18,10 @@ class Maksimer_Backend_Coder    {
             throw new Exception('Sorry. Company policy. Try some wannabe hipster agency where you can wear square glasses and bow tie.', 'Social_Lumberjack');
             // Perhaps we should show some pictures from our latest julebord in Fleischer / Voss? 
         }
+
+        if( $wmc->will_code_for_food() ) {
+            throw new Exception('Our lunch is actually (almost…) free and everyone loves a good burger!.', 'Code_For_Food');
+        }
         
         if( !$wmc->will_work_hard_when_required() || !$wmc->sees_producing_great_code_as_a_reward() )    {
             throw new Exception('Sorry. If champagne is your reward, try a creative design agency.', 'Social_Hardworking');
@@ -38,7 +42,7 @@ class Maksimer_Backend_Coder    {
         if( !$wmc->wants_to_work_in_bergen_or_stavanger() )   {
             throw new Exception('Sorry, we need you in one of our offices quite often.', 'Not_Qualified');
         }
-        
+
         $wmc->email_cv_and_short_summary('nils-fredrik@maksimer.no', 'Backend developer', 'Hi, attached you find my cv. Here you get 3 reasons you should hire me for your awesome PHP, WordPress / WooCommerce position: ');
         
     }
