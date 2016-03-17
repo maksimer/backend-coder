@@ -3,15 +3,15 @@
 class Maksimer_Backend_Coder    {
     public function __construct($wmc) { // $wmc => Wannabe Maksimer Backend Coder
 
-        if( !$wmc->looking_for_a_challinging_job() )    {
-            throw new Exception('Try google, facebook or microsoft.', 'Looking_For_Somehting_Else_Big_And_Safe_Exception');
+        if( !$wmc->looking_for_a_challenging_job() )    {
+            throw new Exception('Try google, facebook or microsoft.', 'Looking_For_Something_Else_Big_And_Safe_Exception');
         }
 
         if( !$wmc->knows_php_to_fingertips() )  {
             if( $wmc->really_eager_to_learn() && $wmc->has_junior_potential() ) {
                 throw new Exception('Send an email to the boss: nils-fredrik@maksimer.no with a few lines and exception code', 'Not_Qualified_But_Might_Be_A_Quick_Learning_Talent');
             }
-            throw new Exception('Sorry. Try something else. Dont waste your/our time.', 'Not_Qualified');
+            throw new Exception('Sorry. Try something else. Don\'t waste your/our time.', 'Not_Qualified');
         }
 
         if( !$wmc->can_wear_a_lumberjack_shirt_every_friday() ) {
@@ -28,7 +28,7 @@ class Maksimer_Backend_Coder    {
         }
 
         if( !$wmc->has_good_coffee_brewing_morality() ) {
-            throw new Exception('Sorry. If you take the last cup, make a new brew.', 'Social_Coffeebrewing');
+            throw new Exception('Sorry. If you take the last cup, make a new brew.', 'Social_Coffee_Brewing');
         }
 
         if( !$wmc->know_what_wordpress_is() )   {
@@ -43,7 +43,7 @@ class Maksimer_Backend_Coder    {
             throw new Exception('Sorry, we need you in one of our offices quite often.', 'Not_Qualified');
         }
 
-        $wmc->email_cv_and_short_summary('nils-fredrik@maksimer.no', 'Backend developer', 'Hi, attached you find my cv. Here you get 3 reasons you should hire me for your awesome PHP, WordPress / WooCommerce position: ');
+        $wmc->email_cv_and_short_summary('nils-fredrik@maksimer.no', 'Backend developer', 'Hi, attached you find my CV. Here you get 3 reasons you should hire me for your awesome PHP, WordPress / WooCommerce position: ');
 
     }
 }
