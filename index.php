@@ -4,6 +4,8 @@ namespace Maksimer;
 
 class BackendCoder
 {
+    private $wmc;
+
     public function __construct($wmc) // $wmc => Wannabe Maksimer Backend Coder
     {
         if (!$wmc->looking_for_a_challenging_job()) {
@@ -61,6 +63,11 @@ class BackendCoder
             throw new Exception('Sorry, we need you in one of our offices quite often.', 'Not_Qualified');
         }
 
+        $this->wmc = $wmc;
+    }
+
+    public function contact()
+    {
         $wmc->email_cv_and_short_summary(
             'nils-fredrik@maksimer.no',
             'Backend developer',
