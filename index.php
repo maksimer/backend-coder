@@ -6,7 +6,10 @@ class BackendCoder
 {
     private $wmc;
 
-    public function __construct($wmc) // $wmc => Wannabe Maksimer Backend Coder
+    /**
+     * @param object $wmc Wannabe Maksimer Backend Coder
+     */
+    public function __construct($wmc)
     {
         if (!$wmc->looking_for_a_challenging_job()) {
             throw new Exception(
