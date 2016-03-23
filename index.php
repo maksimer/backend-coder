@@ -36,7 +36,7 @@ class Maksimer_Backend_Coder    {
         }
         
         if( !$wmc->know_what_a_wordpress_hook_is() )   {
-            throw new Exception('Sorry .', 'Not_Qualified');
+            throw new Exception('Sorry. It is quite important to know some wordpress stuff', 'Not_Qualified');
         }
         
         if( !$wmc->wants_to_work_in_bergen_or_stavanger() )   {
